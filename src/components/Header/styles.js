@@ -15,7 +15,10 @@ export const Wrapper = styled.div`
   margin: 0 auto;
 `;
 export const MenuContainer = styled.div`
-  background-color: blue;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 `;
 
 export const Menu = styled.ul`
@@ -24,5 +27,10 @@ export const Menu = styled.ul`
 `;
 
 export const ItemMenu = styled.li`
+  margin: 0 10px;
+`;
 
-`
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
