@@ -7,6 +7,7 @@ export default createGlobalStyle`
     outline: 0;
     font-family: 'Open Sans';
     font-size: 1em;
+    line-height: 18px;
     font-weight: 400;
     letter-spacing: 0em;
     box-sizing: border-box;
