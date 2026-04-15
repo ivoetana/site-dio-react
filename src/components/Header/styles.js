@@ -34,4 +34,8 @@ export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 12px;
+
+  & button {
+    padding: 6px 16px;
+  }
 `;
