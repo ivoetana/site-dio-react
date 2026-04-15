@@ -9,6 +9,7 @@ import {
 
 import logo from "../../assets/logo_dio.png";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -20,27 +21,33 @@ const Header = () => {
         <MenuContainer>
           <Menu>
             <ItemMenu>
-              <a href="/carreiras">Carreiras</a>
+              <a href="/">Carreiras</a>
             </ItemMenu>
             <ItemMenu>
-              <a href="/Bootcamps">Bootcamps</a>
+              <a href="/">Bootcamps</a>
             </ItemMenu>
             <ItemMenu>
-              <a href="/Projetos">Projetos</a>
+              <a href="/">Projetos</a>
             </ItemMenu>
             <ItemMenu>
-              <a href="/Comunidade">Comunidade</a>
+              <a href="/">Comunidade</a>
             </ItemMenu>
             <ItemMenu>
-              <a href="/Planos">Planos</a>
+              <a href="/">Planos</a>
             </ItemMenu>
             <ItemMenu>
-              <a href="/Para Empresas">Para Empresas</a>
+              <a href="/">Para Empresas</a>
             </ItemMenu>
           </Menu>
+
           <ButtonsContainer>
-            <Button variant="contourn" title="Entrar" onClick="/login"/>
-            <Button title="Criar conta" />
+            <Link to="/login">
+              <Button variant="contourn" title="Entrar" />
+            </Link>
+
+            <Link to="/cadastrar">
+              <Button title="Criar conta" />
+            </Link>
           </ButtonsContainer>
         </MenuContainer>
       </Wrapper>

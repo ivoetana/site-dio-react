@@ -5,7 +5,6 @@ export const ButtonContainer = styled.button`
   color: #fff;
   border: none;
   border-radius: 10px;
-  margin: 0 5px;
   padding: 7px 20px;
   font-weight: 600;
   cursor: pointer;
@@ -18,8 +17,8 @@ export const ButtonContainer = styled.button`
     filter: brightness(1.3);
   }
 
-  ${({ variant }) =>
-    variant !== "primary" &&
+  ${({ $variant }) =>
+    $variant !== "primary" &&
     css`
       background-color: transparent;
       border: 1px solid #fff;

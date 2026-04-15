@@ -24,13 +24,14 @@ export const MenuContainer = styled.div`
 export const Menu = styled.ul`
   display: flex;
   list-style: none;
+  gap: 20px;
+  margin-right: 20px;
 `;
 
-export const ItemMenu = styled.li`
-  margin: 0 10px;
-`;
+export const ItemMenu = styled.li``;
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 12px;
 `;
