@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 import {
-  Container,
+  Main,
+  Section,
   TextContent,
   TextHighLight,
   Title,
@@ -13,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Container>
+      <Main>
         <Wrapper>
           <div>
             <Title>
@@ -31,7 +32,9 @@ const Home = () => {
             </Link>
           </div>
         </Wrapper>
-      </Container>
+      </Main>
+      <Section>teste</Section>
+      <Section $bg="#fff">teste</Section>
     </>
   );
 };

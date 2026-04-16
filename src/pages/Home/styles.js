@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Container = styled.main`
+export const Main = styled.main`
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -18,6 +18,18 @@ export const Container = styled.main`
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+`;
+
+export const Section = styled.section`
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e192c;
+  color: #fff;
+  height: 250px;
 `;
 
 export const Wrapper = styled.div`
