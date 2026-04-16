@@ -30,7 +30,7 @@ export const Menu = styled.ul`
 
 export const SubMenuContainer = styled.div`
   display: none;
-  width: 550px;
+  width: 568px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -67,7 +67,7 @@ export const SubMenuContent = styled.div`
   border: 2px solid #272235;
   border-radius: 8px;
   display: grid;
-  grid-template-columns: 1fr 250px;
+  grid-template-columns: 1fr 280px;
   -webkit-box-pack: start;
   justify-content: flex-start;
   align-items: flex-start;
@@ -89,6 +89,11 @@ export const CategoriaItem = styled.a`
   padding: 12px 1rem;
   display: flex;
   justify-content: space-between;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background-color: ${(props) => (props.$isActive ? "#2e2a4c" : "transparent")};
 
   & svg {
     color: #7f28b5;
@@ -121,7 +126,7 @@ export const CursosContainer = styled.div`
 
 export const CursoItem = styled.a`
   width: 100%;
-  padding: 10px;
+  padding: 12px;
 
   &:hover {
     background-color: #2e2a4c;
