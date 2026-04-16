@@ -28,7 +28,107 @@ export const Menu = styled.ul`
   margin-right: 20px;
 `;
 
-export const ItemMenu = styled.li``;
+export const SubMenuContainer = styled.div`
+  display: none;
+  width: 550px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 28px;
+`;
+
+export const ItemMenu = styled.li`
+  &:first-of-type {
+    position: relative;
+
+    &:hover ${SubMenuContainer} {
+      display: flex;
+    }
+  }
+
+  & span {
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease-out;
+    cursor: pointer;
+
+    & svg {
+      margin-left: 0.25rem;
+    }
+
+    &:hover {
+      color: #7f28b5;
+    }
+  }
+`;
+
+export const SubMenuContent = styled.div`
+  background: #13111f;
+  border: 2px solid #272235;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+`;
+
+export const CategoriasContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #181628;
+`;
+
+export const CategoriaItem = styled.a`
+  width: 100%;
+  padding: 12px 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  & svg {
+    color: #7f28b5;
+  }
+
+  &:hover {
+    background-color: #2e2a4c;
+  }
+`;
+
+export const VerMais = styled.a`
+  width: 100%;
+  padding: 12px 1rem;
+  color: #7f28b5;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const CursosContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+`;
+
+export const CursoItem = styled.a`
+  width: 100%;
+  padding: 10px;
+
+  &:hover {
+    background-color: #2e2a4c;
+    cursor: pointer;
+    color: #fff;
+  }
+`;
 
 export const ButtonsContainer = styled.div`
   display: flex;
