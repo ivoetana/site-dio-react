@@ -1,3 +1,6 @@
+/**
+ * ARQUIVO COM AS ESTILIZAÇÕES GLOBAIS DO SITE
+ */
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
